@@ -16,6 +16,7 @@ import {
   git,
   docker,
   tesla,
+  Tesla,
   shopify,
   carrent,
   Grammacast,
@@ -174,7 +175,7 @@ const index = {
         { name: "Monogame", color: "pink-text-gradient" },
       ],
       image: Grammacast,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/DewDonut/SAE_DEV_GrammaCast",
     },
     {
       name: "Tesla",
@@ -185,8 +186,8 @@ const index = {
         { name: "Api csharp", color: "green-text-gradient" },
         { name: "Vuejs", color: "pink-text-gradient" },
       ],
-      image: tesla,
-      source_code_link: "https://github.com/",
+      image: Tesla,
+      source_code_link: "https://github.com/leichtmj/Client-Tesla",
     },
     {
       name: "Webshop",

@@ -1,15 +1,14 @@
 import { index as indexFr}  from "./indexFr.js"
 import { index as indexEn} from "./indexEn.js"
+import { useState } from "react";
 
-export const currentlanguage = () =>{
-  localStorage.storage == "fr" ? localStorage.setItem("language", "en") : localStorage.setItem("language", "fr")
+export const currentlanguage = () => {
 
-  if (localStorage.getItem("language")==null){
+  const [local] = useState(localStorage.getItem("language"));
+
+  if (localStorage.getItem("language") == null) {
     localStorage.setItem("language", "fr");
   }
 
-  let local = localStorage.getItem("language");
-  
   return local == "fr" ? indexFr : indexEn;
 }
-

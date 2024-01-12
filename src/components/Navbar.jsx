@@ -2,15 +2,33 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { currentlanguage } from  "../constants/index";
-import { menu, close, language, england, france } from "../assets";
+import { menu, close, language, england, france, cvFr, cvEn } from "../assets";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const local = currentlanguage()
-  const [localBool, setLocalBool] = useState(true);
+  const [trigger, setTrigger] = useState(false);
+  let local = currentlanguage();
 
+  useEffect(
+    function switchEn() {
+    if (!trigger) {
+      if (localStorage.language == "en") {
+        localStorage.setItem("language", "fr")
+      }
+    }
+  }, [trigger]);
+  
+  useEffect(
+    function switchfr() {
+    if (trigger) {
+      if (localStorage.language == "fr") {
+        localStorage.setItem("language", "en")
+      }
+    }
+  }, [trigger]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +44,16 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handelclick = () => {
+    setTrigger(!trigger);
+    setTimeout(()=>{
+      window.location.reload(false);
+    }, 1500);
+    console.log(localStorage)
+    console.log(local)
+    console.log(trigger)
+  }
 
   return (
     <nav
@@ -62,9 +90,19 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
-          <li className='list-none hidden sm:flex flex-row gap-2 w-32' onClick={() => {currentlanguage(), setLocalBool(!localBool) }}>
+          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+            <a
+                href={trigger ? cvEn : cvFr}
+                download="Enzo Landrecy CV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>CV</button>
+              </a>
+          </li>
+          <li className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer sm:flex gap-2 w-32' onClick={() => handelclick() }>
             <img src={language} alt="test" />
-            <img src={localBool ? france : england} alt={localBool ? "France" : "Englais"} width="25%"/>
+            <img src={trigger ? england :  france } alt={trigger ?  "France" : "Anglais" } width="25%"/>
           </li>
         </ul>
 

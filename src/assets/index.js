@@ -36,9 +36,12 @@ import language from "./svg/language.svg";
 import france from "./flags/france.png";
 import england from "./flags/england.png";
 
-import microsoft from "./company/Microsoft.png"
-import STN from "./company/Stn.png"
-import IUT from "./company/IUT.png"
+import microsoft from "./company/Microsoft.png";
+import STN from "./company/Stn.png";
+import IUT from "./company/IUT.png";
+
+import cvFr from "./CV/Enzo Landrecy CV.pdf";
+import cvEn from "./CV/CV International Enzo Landrecy.pdf";
 
 export {
   backend,
@@ -75,4 +78,6 @@ export {
   microsoft,
   STN,
   IUT,
+  cvFr,
+  cvEn,
 };
