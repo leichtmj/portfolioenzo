@@ -1,4 +1,5 @@
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import Skills from "./skills";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -10,6 +11,7 @@ import CanvasLoader from "./Loader";
 
 
 export {
+  Skills,
   Hero,
   Navbar,
   About,

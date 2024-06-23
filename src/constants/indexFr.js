@@ -30,11 +30,15 @@ const index =
 
   navLinks : [
     {
-      id: "à propos",
+      id: "skills",
+      title: "Compétence",
+    },
+    {
+      id: "about",
       title: "à propos",
     },
     {
-      id: "travail",
+      id: "work",
       title: "travail",
     },
     {
@@ -223,6 +227,10 @@ const index =
       s1: "Mon travail",
       s2: "Projets.",
       s3: " Les projets suivants illustrent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les dépôts de code et des démos en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies, et à gérer efficacement les projets.",
+    },
+    skill: {
+      s1: "",
+      s2: "Apprentissages Critiques.",
     },
     contact: {
       a1: "Merci. Je vous répondrai dès que possible.",
