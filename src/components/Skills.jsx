@@ -6,10 +6,10 @@ import { styles } from "../styles";
 import { currentlanguage } from "../constants/index";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { BoxSx } from "../MUI";
+import { BoxSx } from "../MaterialUI";
 
 const Skills = () => {
-    const local = currentlanguage()
+    const local = currentlanguage();
 
     return (
         <>

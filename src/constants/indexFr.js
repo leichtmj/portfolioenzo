@@ -14,10 +14,8 @@ import {
   git,
   docker,
   tesla,
-  shopify,
   Grammacast,
   Tesla,
-  tripguide,
   threejs,
   Webshop,
   microsoft,
@@ -229,7 +227,7 @@ const index =
       s3: " Les projets suivants illustrent mes compétences et mon expérience à travers des exemples concrets de mon travail. Chaque projet est brièvement décrit avec des liens vers les dépôts de code et des démos en direct. Cela reflète ma capacité à résoudre des problèmes complexes, à travailler avec différentes technologies, et à gérer efficacement les projets.",
     },
     skill: {
-      s1: "",
+      s1: "Karuta",
       s2: "Apprentissages Critiques.",
     },
     contact: {
@@ -245,6 +243,21 @@ const index =
       p1: "Comment vous appelez-vous?",
       p2: "Quelle est votre adresse web?",
       p3: "Que voulez-vous dire?",
+    },
+    apprentissagecritique: {
+      s0: "Choisir et implémenter les architectures adaptées",
+      s1: "Faire évoluer une application existante",
+      s2: "Intégrer des solutions dans un environnement de développement, de test ou de production",
+      s3: "Anticiper les résultats de diverses métriques",
+      s4: "Profiler, analyser et justifier le comportement d un code existant",
+      s5: "Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d application",
+      s6: "Organiser et partager une veille numérique",
+      s7: "Identifier les principaux coûts et gains de la (ou des) mission(s)",
+      s9: "Guider la conduite du changement informatique au sein d une organisation",
+      s9: "Accompagner le management de projet informatique",
+    },
+    appcritiText: {
+      t0: "",
     },
   },
 }
