@@ -245,6 +245,12 @@ const index =
       p3: "Que voulez-vous dire?",
     },
     apprentissagecritique: {
+      s_2: "COLLABORER AU SEIN D’ UNE EQUIPE INFORMATIQUE",
+      s_1: "OPTIMISER DES APPLICATIONS",
+      s_0: "REALISER UN DEVELOPPEMENT",
+      s0_1: "Karuta",
+      s0_2: "Apprentissage Critique",
+      s0_3: "Au cours de mon stage chez Groupe-Entis, j'ai acquis et développé de nombreuses compétences techniques et professionnelles essentielles pour un développeur. Les actions réalisées pendant cette période m'ont permis d'aborder divers aspects du développement logiciel, de la conception de l'architecture à la gestion de projet en passant par l'optimisation des performances. Voici un aperçu des apprentissages critiques et des actions spécifiques que j'ai entreprises pour chaque compétence ",
       s0: "Choisir et implémenter les architectures adaptées",
       s1: "Faire évoluer une application existante",
       s2: "Intégrer des solutions dans un environnement de développement, de test ou de production",
@@ -253,15 +259,39 @@ const index =
       s5: "Choisir et utiliser des bibliothèques et méthodes dédiées au domaine d application",
       s6: "Organiser et partager une veille numérique",
       s7: "Identifier les principaux coûts et gains de la (ou des) mission(s)",
-      s9: "Guider la conduite du changement informatique au sein d une organisation",
+      s8: "Guider la conduite du changement informatique au sein d une organisation",
       s9: "Accompagner le management de projet informatique",
     },
     appcritiText: {
-      t0: "",
+      t0_1: "> Choix des logiciels : Utilisation de Blazor pour le frontend, Bootstrap pour le design, et AutoMapper pour le mapping d'entités.",
+      t0_2: "> Conception de l'architecture de l'API en utilisant le pattern code first pour une intégration efficace avec la base de données.",
+
+      t1_1: "> Modification du code existant pour intégrer la fonctionnalité d'importation de fichiers Excel.",
+      t1_2: "> Réécriture des méthodes de contrôle pour améliorer la gestion des erreurs et des exceptions.",
+
+      t2_1: "> Utilisation de Git pour le versioning du code, incluant les commandes push, pull et merge.",
+      t2_2: "> Gestion des branches de développement pour coordonner les modifications avec l'équipe.",
+
+      t3_1: "> Évaluation des performances des requêtes SQL pour optimiser le temps de réponse des API.",
+
+      t4_1: "> Réalisation de tests unitaires sur les contrôleurs de l'API pour vérifier leur bon fonctionnement.",
+
+      t5_1: "> Intégration de la bibliothèque AutoMapper pour simplifier le mapping entre les entités et les DTO.",
+      t5_2: "> Adoption de Moq pour les tests unitaires afin de simuler les dépendances et vérifier le comportement des contrôleurs.",
+
+      t6_1: "> Réalisation de présentations internes sur les nouvelles technologies et outils utilisés, comme Blazor et MSAL.",
+      t6_2: "> Partage de ressources et articles pertinents avec l'équipe via une plateforme de collaboration.",
+
+      t7_1: "> Calcul du nombre d'heures passé sur le projet avec le taux horraire.",
+
+      t8_1: "> Participation à des réunions avec des clients pour comprendre leurs besoins et ajuster les fonctionnalités de l'application en conséquence.",
+      t8_2: "> Communication régulière avec les utilisateurs finaux pour recueillir des retours sur l'application.",
+
+      t9_1: "> Participation aux réunions de planification de sprint pour définir les priorités et les tâches à accomplir.",
+      t9_2: "> Suivi des progrès et mise à jour des statuts de projet avec gitlab.",
+
     },
   },
 }
 
 export { index };
-
-  
